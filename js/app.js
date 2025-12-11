@@ -19,3 +19,21 @@ if (paragraphElement.textContent !== '') {
 }
 
 paragraphElement.style.color = 'blue';
+
+// 1. Select the body element, so we can attach new elements to it
+const bodyElement = document.querySelector('body');
+
+console.dir(bodyElement);
+
+// 2. Create a new element (but it is not yet in the DOM and invisible at first)
+const h2Element = document.createElement('h2');
+
+// 3. Give your new element some content
+h2Element.textContent = 'Comments section';
+
+// 4. Place/attach/append the element in the DOM
+bodyElement.appendChild(h2Element);
+
+
+
+
