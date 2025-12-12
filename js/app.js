@@ -61,3 +61,13 @@ if (buttonElement.hasAttribute('disabled') === true) {
 
 buttonElement.setAttribute('id', 'submit');
 
+// add a class named ‘btn’ to our button element
+buttonElement.classList.add('btn');
+
+// remove the class named ‘btn’ from our button element
+buttonElement.classList.remove('btn');
+
+// add a class named ‘action-button’ to our button element
+buttonElement.classList.add('action-button');
+
+
