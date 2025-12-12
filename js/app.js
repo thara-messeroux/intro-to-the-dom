@@ -50,3 +50,14 @@ commentElements.forEach((commentElement) => {
     console.log(commentElement.textContent);
     commentElement.style.fontSize = '30px';
 });
+
+// Use querySelector() to select the button element:
+const buttonElement = document.querySelector('button');
+
+if (buttonElement.hasAttribute('disabled') === true) {
+    // the button has the disabled attribute
+    buttonElement.removeAttribute('disabled');
+}
+
+buttonElement.setAttribute('id', 'submit');
+
